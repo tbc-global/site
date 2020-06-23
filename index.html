@@ -9,7 +9,9 @@
     <body>
 Up to date.
     <script type="text/javascript">
-      window.top.location.href = "https://tbc-site.github.io/site"
+      if (top.location != self.location) {
+        top.location = self.location.href;
+      }
     </script>
     </body>
 </html>
